@@ -17,7 +17,7 @@
 
       // The repo name is the first segment of the path.
       // e.g., for "/axiom/page", it's "axiom".
-      const route = path.substring(path.find("/"))
+      const route = path.substring(path.indexOf("/",1))
 
       // Construct the new URL.
       // It combines the repo name, a hash, the intended route, and any search or hash params.
